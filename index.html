@@ -30,7 +30,7 @@
         let start;
         let timer_id;
         document.getElementById('start_stop').addEventListener('click', function(){
-            if (this.innerHTML === 'start') {
+            if (this.innerHTML === 'START') {
                 start = new Date();
             
             start = new Date();
@@ -38,14 +38,14 @@
             timer_id = setInterval(goTimer, 10);
 
             this.innerHTML = "STOP";
-            this.classList.remove('btn-primaty');
+            this.classList.remove('btn-primary');
             this.classList.add('btn-danger');
             //this. = getElementById('start_stop')
             } else {
                 clearInterval(timer_id);
                 this.innerHTML = 'START';
                 this.classList.remove('btn-danger');
-                this.innerHTML.add('btn-primary');
+                this.classList.add('btn-primary');
             }
 
             
